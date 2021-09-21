@@ -1,0 +1,8 @@
+# First install Chocolatey using cmd:
+
+@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
+
+
+# Then run choco script specifically design for dev environment
+
+@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://gist.githubusercontent.com/engg-raihan/817ae5d249d5e342c4c3cdb73538fe6e/raw/d5a04b16267afca9de7f4f9610b71382a509a4b5/testing-environment-setup.ps1'))"
